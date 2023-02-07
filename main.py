@@ -50,6 +50,9 @@ if __name__ == "__main__":
 
     action = subject.getUserAction()
     subject.notify_listeners(action)
+    # To test the prev_info memory algorithm
+    action = subject.getUserAction()
+    subject.notify_listeners(action)
 
     # making Temperature observe WeatherMan
     # action = subject2.getUserAction()
